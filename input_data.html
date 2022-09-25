@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Input Data Mahasiswa</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <h2>Inputkan Data Anda</h2>
+    
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">NIM</label>
+                        <input type="text" name="nim" id="nim">
+                    </div>
+                    <div>
+                        <label for="product">Nama</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <label for="qty">Kelas</label>
+                        <input type="number" name="kelas" id="kelas">
+                    </div>
+                    <div>
+                        <label for="perPrice">No Absen</label>
+                        <input type="number" name="noabsen" id="noabsen">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Kelas</th>
+                            <th>No Absen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
